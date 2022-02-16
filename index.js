@@ -1,13 +1,16 @@
-//#1 -- For loop in Javascript.
-const nemo = ['nemo'];
+// Drop The Contants which gives O(n) for this function
+function printFirstItemThenFirstHalfThenSayHi100Times(items) {
+    console.log(items[0]);
 
-function findNemo1(array) {
-  for (let i = 0; i < array.length; i++) {
-    if (array[i] === 'nemo') {
-      console.log('Found NEMO!');
-      break;
+    var middleIndex = Math.floor(items.length / 2);
+    var index = 0;
+
+    while (index < middleIndex) {
+        console.log(items[index]);
+        index++;
     }
-  }
-}
 
-findNemo1(nemo);
+    for (var i = 0; i < 100; i++) {
+        console.log('hi');
+    }
+}
