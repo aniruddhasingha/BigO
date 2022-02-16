@@ -1,16 +1,11 @@
-// Drop The Contants which gives O(n) for this function
-function printFirstItemThenFirstHalfThenSayHi100Times(items) {
-    console.log(items[0]);
 
-    var middleIndex = Math.floor(items.length / 2);
-    var index = 0;
-
-    while (index < middleIndex) {
-        console.log(items[index]);
-        index++;
-    }
-
-    for (var i = 0; i < 100; i++) {
-        console.log('hi');
-    }
+function conressBoxes(boxes1, boxes2) {
+  boxes1.forEach((boxes) => {
+    console.log(boxes)
+  });
+  boxes2.forEach((boxes) => {
+    console.log(boxes)
+  });
 }
+
+// O(a + b)
