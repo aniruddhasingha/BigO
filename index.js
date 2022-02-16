@@ -1,10 +1,12 @@
-//#1 -- For loop in Javascript.
-const everyone = ['dory', 'bruce', 'marlin', 'nemo', 'gill', 'bloat', 'nigel', 'squirt', 'darla', 'hank'];
+function funChallenge(input) {
+  let a = 10; // O(1)
+  a = 50 + 3;// O(1)
 
-
-function findNemo2(array) {
-  console.log(array[1]);
-  console.log(array[2]);
+  for (let i = 0; i < input.length; i++) {// O(n)
+    anotherFunction(); // O(n)
+    let stranger = true; // O(n)
+    a++; // O(n)
   }
-// O(2)
-findNemo2(everyone) 
+  return a; // O(1)
+}
+// BIG O naotation =  O(3+ 4n)
