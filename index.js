@@ -1,17 +1,18 @@
-function printAllNumbersThenAllPairSums(numbers) {
+//#5 Space complexity O(1)
+function boooo(n) {
+    for (let i = 0; i < n.length; i++) {
+        console.log('booooo');
+    }
+}
+boooo([1,2,3,4,5,6]) //O(1)
 
-  console.log('these are the numbers:');
-  numbers.forEach(function(number) {
-    console.log(number); 
-  });
-
-  console.log('and these are their sums:');
-  numbers.forEach(function(firstNumber) { 
-    numbers.forEach(function(secondNumber) {
-      console.log(firstNumber + secondNumber);
-    });
-  });
+// #6 Space complexity O(n)
+function arrayOfHiNTimes(n) {
+    var hiArray = [];
+    for (let i = 0; i < n; i++) {
+        hiArray[i] = 'hi';
+    }
+    return hiArray;
 }
 
-printAllNumbersThenAllPairSums([1,2,3,4,5])
-// O(n+n^2) = O(n^2);
+arrayOfHiNTimes(6) //O(n)
